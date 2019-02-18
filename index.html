@@ -1,8 +1,401 @@
----
-layout: default
-title: Atish Jain, Data Scientist
----
-<div class="blurb">
-	<h1>Hi there, I'm Atish Jain!</h1>
-	<p>I'm best known as the data scientist from <em>A Touch of Evil</em> Don't trust me. <a href="/about">Read more about my life...</a></p>
-</div><!-- /.blurb -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Portfolio of Atish Jain,Data Scientist based in Gurgaon, India">
+    <meta name="keywords" content="data science, tensorflow, development, machine learning, sites, portfolio, deep learning,Artificial intelligence , Atish Jain, ML, Computer Vision">
+    <title>Atish Jain | Data Scientist</title>
+
+   
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,300,300italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link href="ext/css/ionicons.min.css" rel="stylesheet">
+    <link href="res/css/styles.css" rel="stylesheet">
+	<style>
+	.skillbar {
+	position:relative;
+	display:block;
+	margin-bottom:15px;
+	width:100%;
+	background:#eee;
+	height:35px;
+	border-radius:3px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	-webkit-transition:0.4s linear;
+	-moz-transition:0.4s linear;
+	-ms-transition:0.4s linear;
+	-o-transition:0.4s linear;
+	transition:0.4s linear;
+	-webkit-transition-property:width, background-color;
+	-moz-transition-property:width, background-color;
+	-ms-transition-property:width, background-color;
+	-o-transition-property:width, background-color;
+	transition-property:width, background-color;
+}
+
+.skillbar-title {
+	position:absolute;
+	top:0;
+	left:0;
+width:110px;
+	font-weight:bold;
+	font-size:13px;
+	color:#ffffff;
+	background:#6adcfa;
+	-webkit-border-top-left-radius:3px;
+	-webkit-border-bottom-left-radius:4px;
+	-moz-border-radius-topleft:3px;
+	-moz-border-radius-bottomleft:3px;
+	border-top-left-radius:3px;
+	border-bottom-left-radius:3px;
+}
+
+.skillbar-title span {
+	display:block;
+	background:rgba(0, 0, 0, 0.1);
+	padding:0 20px;
+	height:35px;
+	line-height:35px;
+	-webkit-border-top-left-radius:3px;
+	-webkit-border-bottom-left-radius:3px;
+	-moz-border-radius-topleft:3px;
+	-moz-border-radius-bottomleft:3px;
+	border-top-left-radius:3px;
+	border-bottom-left-radius:3px;
+}
+
+.skillbar-bar {
+	height:35px;
+	width:0px;
+	background:#6adcfa;
+	border-radius:3px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+}
+
+.skill-bar-percent {
+	position:absolute;
+	right:10px;
+	top:0;
+	font-size:11px;
+	height:35px;
+	line-height:35px;
+	color:#ffffff;
+	color:rgba(0, 0, 0, 0.4);
+}
+</style>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
+
+<script type="text/javascript">
+
+jQuery(document).ready(function(){
+	jQuery('.skillbar').each(function(){
+		jQuery(this).find('.skillbar-bar').animate({
+			width:jQuery(this).attr('data-percent')
+		},6000);
+	});
+});
+
+</script>
+
+    <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+    <![endif]-->
+</head>
+
+<body data-spy="scroll" data-target="#main-nav">
+
+    <div class="loader-screen">
+        <ul class="loading-bar">
+            <li class="loading-line"></li>
+            <li class="loading-line"></li>
+            <li class="loading-line"></li>
+            <li class="loading-line"></li>
+            <li class="loading-line"></li>
+        </ul>
+    </div>
+
+    <div class="container-fluid">
+
+        <div class="row">
+            <header class="main-header" id="main-header">
+                <nav class="navbar">
+                    <h6><span class="sr-only">Main navigation</span></h6>
+                    <div class="container">
+                        <div class="navbar-header">
+                            <button type="button" class="nav-toggle-btn collapsed" data-toggle="collapse" data-target="#main-nav" aria-expanded="false">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="ion-navicon nav-open"></span>
+                                <span class="ion-android-close nav-close"></span>
+                            </button>
+                            
+                        </div>
+
+                        <div class="collapse navbar-collapse" id="main-nav">
+                            <ul class="nav navbar-nav navbar-right">
+                                <li><a href="#about-me" class="nav-link">About me</a></li>
+                                <li><a href="#tools" class="nav-link">Tools</a></li>
+                                <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                                <li><a href="#contact" class="nav-link">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+                <div class="overlay"></div>
+                <div class="welcome-box">
+                    <p>Hi, I'm Atish Jain.</p>
+                    <h1>Data Scientist</h1>
+                </div>
+                <nav class="social-nav">
+                    <h6><span class="sr-only">Social navigation</span></h6>
+                    <ul class="nav invisible">
+                        
+                        <li><a class="social-btn social-linkedin" href="https://www.linkedin.com/in/atishnits/" target="_blank"><span class="ion-social-linkedin"></span></a></li>
+                        <li><a class="social-btn social-github" href="https://github.com/atishjn/" target="_blank"><span class="ion-social-github"></span></a></li>
+                        <li><a class="social-btn social-email" href="mailto:atishj.nits@gmail.com"><span class="ion-ios-email"></span></a></li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+
+        <!-- About me -->
+        <div class="row">
+            <section class="container about-me" id="about-me">
+
+                <div class="row">
+                    <h2>About me</h2>
+                </div>
+
+                <div class="row visible-xs visible-sm">
+                    <div class="col-sm-12 bg-me">
+                    </div>
+                </div>
+
+                <div class="row feats-row">
+                    <div class="col-md-6 feats-container">
+                        <section>
+                            <h3><span class="ion-ios-glasses-outline icon-header"></span>Who I am</h3>
+                            <p>Hello, I am is Atish Jain. I am currently working as a Data Scientist at cars24 in Gurgaon, India. My interest lies in deep learning and machine learning problems.</p>
+                        </section>
+                    </div>
+                    <div class="col-md-6 feat-bg bg-me hidden-xs hidden-sm invisible"></div>
+                </div>
+
+                <div class="row feats-row">
+                    <div class="col-md-6 feat-bg bg-whatido hidden-xs hidden-sm invisible">
+                    </div>
+                    <div class="col-md-6 feats-container">
+                        <section>
+                            <h3><span class="ion-ios-color-wand-outline icon-header"></span>What I do</h3>
+                            <p>I specialise in building machine learning solutions. A lot of my work has been around building learning algorithms on structured datasets from databases and extracting useful representations of entities from unstructured datasets such as images and text.</p>
+                        </section>
+                    </div>
+                </div>
+
+                <div class="row feats-row">
+                    <div class="col-md-6 feats-container">
+                        <section>
+                            <h3><span class="ion-ios-list-outline icon-header"></span>Neat facts</h3>
+                            <ul class="list-unstyled">
+                                <li><span class="color-main">Coding:</span>Python, R, VBA.</li>
+                                <li><span class="color-main">Hobbies:</span> I like travelling to new places, trying different cuisines and reading books.</li>
+                                <li><span class="color-main">Languages:</span> I speak and write English,Hindi!</li>
+                            </ul>
+                        </section>
+                    </div>
+                    <div class="col-md-6 feat-bg bg-facts hidden-xs hidden-sm invisible"></div>
+                </div>
+
+            </section>
+        </div>
+
+        <!-- Tools -->
+        <section class="row dark-container tools-row">
+            <div class="container tools" id="tools">
+                <div class="row">
+                    <h2>My tools</h2>
+                </div>
+                
+
+
+        
+<div class="skillbar clearfix " data-percent="90%">
+	<div class="skillbar-title" style="background: #d35400;"><span>Python</span></div>
+	<div class="skillbar-bar" style="background: #e67e22;"></div>
+	<div class="skill-bar-percent">90%</div>
+</div> <!-- End Skill Bar -->
+
+<div class="skillbar clearfix " data-percent="80%">
+	<div class="skillbar-title" style="background: #2980b9;"><span>Tensorflow</span></div>
+	<div class="skillbar-bar" style="background: #3498db;"></div>
+	<div class="skill-bar-percent">80%</div>
+</div> <!-- End Skill Bar -->
+
+<div class="skillbar clearfix " data-percent="90%">
+	<div class="skillbar-title" style="background: #2c3e50;"><span>Keras</span></div>
+	<div class="skillbar-bar" style="background: #2c3e50;"></div>
+	<div class="skill-bar-percent">90%</div>
+</div> <!-- End Skill Bar -->
+
+<div class="skillbar clearfix " data-percent="85%">
+	<div class="skillbar-title" style="background: #46465e;"><span>R</span></div>
+	<div class="skillbar-bar" style="background: #5a68a5;"></div>
+	<div class="skill-bar-percent">85%</div>
+</div> <!-- End Skill Bar -->
+
+<div class="skillbar clearfix " data-percent="85%">
+	<div class="skillbar-title" style="background: #333333;"><span>MySQL</span></div>
+	<div class="skillbar-bar" style="background: #525252;"></div>
+	<div class="skill-bar-percent">85%</div>
+</div> <!-- End Skill Bar -->
+
+<div class="skillbar clearfix " data-percent="75%">
+	<div class="skillbar-title" style="background: #333353;"><span>MongoDB</span></div>
+	<div class="skillbar-bar" style="background: #525282;"></div>
+	<div class="skill-bar-percent">75%</div>
+</div> <!-- End Skill Bar -->
+
+<div class="skillbar clearfix " data-percent="90%">
+	<div class="skillbar-title" style="background: #27ae60;"><span>Flask</span></div>
+	<div class="skillbar-bar" style="background: #2ecc71;"></div>
+	<div class="skill-bar-percent">90%</div>
+</div> <!-- End Skill Bar -->
+
+
+
+<div class="skillbar clearfix " data-percent="85%">
+	<div class="skillbar-title" style="background: #124e8c;"><span>OpenCV</span></div>
+	<div class="skillbar-bar" style="background: #4288d0;"></div>
+	<div class="skill-bar-percent">85%</div>
+
+</div> <!-- End Skill Bar -->
+            </div>
+        </section>
+
+        <!-- Portfolio -->
+        <div class="portfolio-row row">
+            <section class="container portfolio" id="portfolio">
+                <div class="row">
+                    <h2>Portfolio</h2>
+                </div>
+
+                <div class="row">
+                    <nav>
+                        <h6><span class="sr-only">Portfolio navigation</span></h6>
+                        <ul class="nav nav-pills portfolio-nav filter-options">
+                            <li class="active-tab" data-filter="all">All</li>
+							<li data-filter="1">Corporate</li>
+                            <li data-filter="2">Code</li>
+                            
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="row">
+                    <div class="showcase-container clearfix" id="showcase-container">
+
+                        <section class="col-sm-6 filtr-item showcase-item" data-category="1">
+                            <img class="img-responsive showcase-img" src="res/img/recsys.png" alt="recsys">
+                            <div class="item-desc">
+                                <h4>Recommendation system</h4>
+                                <p>Built a recommendation system using convolutional neural network (Resnet50).</p>
+                                
+                            </div>
+                        </section>
+						
+						
+						
+						<section class="col-sm-6 filtr-item showcase-item" data-category="1">
+                            <img class="img-responsive showcase-img" src="res/img/showcase_photocraft.jpg" alt="OD">
+                            <div class="item-desc">
+                                <h4>Object Detection</h4>
+                                <p>Worked on Object detection using Faster R-CNN as well as Yolo v2 being the underlying architectures.</p>
+                               
+                            </div>
+                        </section>
+
+						
+					
+                
+				<br>
+				
+				
+					
+						<section class="col-sm-6 filtr-item showcase-item" data-category="2">
+									<img class="img-responsive showcase-img" src="res/img/fer.png" alt="FER">
+									<div class="item-desc">
+										<h4>Facial Expression Recognition</h4>
+										<p>Worked on Facial Expression Recognition using custom CNN architecture.</p>
+									   
+									</div>
+								</section>
+
+						<section class="col-sm-6 filtr-item showcase-item" data-category="1">
+									<img class="img-responsive showcase-img" src="res/img/showcase_xtremetravels.jpg" alt="GAN">
+									<div class="item-desc">
+										<h4>Self Attention GAN</h4>
+										<p>Worked on SAGAN that was used to improve the image quality as well as used to generate words in the caption from image by attending a specific part of image .</p>
+										
+									</div>
+						</section>
+					
+					</div>
+				</div>
+			
+			
+			</section>
+        </div>
+
+
+                        
+                        
+        <br>
+		
+        <!-- Contact -->
+        <div class="row contact-row dark-container">
+            <section class="container contact" id="contact">
+                <div class="row">
+                    <h2>Get in touch</h2>
+                </div>
+                <div class="row">
+                    <form id="contact-form" method="post" action="https://formspree.io/atishj.nits@gmail.com">
+                        <div class="row">
+                            <input name="form-name" id="form-name" type="text" placeholder="your name" required>
+                        </div>
+                        <div class="row">
+                            <input name="form-email" id="form-email" type="email" placeholder="your email" required>
+                        </div>
+                        <div class="row">
+                            <textarea name="form-msg" id="form-msg" placeholder="your message" required></textarea>
+                        </div>
+                        <div class="row">
+                            <button type="submit" class="button">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </div>
+
+        <!-- Footer -->
+        <div class="row dark-container">
+            <footer class="footer-main">
+                <p>Designed by Atish Jain &mdash; 2019 &copy;</p>
+            </footer>
+        </div>
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/3.2.0/imagesloaded.pkgd.min.js"></script>
+    <script src="ext/js/jquery.filterizr.min.js"></script>
+    <script src="ext/js/particles.min.js"></script>
+    <script src="res/js/typewriter.js"></script>
+    <script src="res/js/app.js"></script>
+
+</body>
+</html>
